@@ -5,7 +5,12 @@ const Tasks = ({ tasks, onDelete, onToggle }) => {
     <>
       {tasks.map((task) => (
         // <h3 key={task.id}>{task.text}</h3>
-        <Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />
+        <Task 
+        key={task.id} 
+        task={task} 
+        onDelete={(id) => onDelete(id)}
+        // onToggle={onToggle} 
+        />
       ))}
     </>
   );
