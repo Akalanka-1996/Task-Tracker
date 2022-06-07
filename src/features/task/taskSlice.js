@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { act } from "react-dom/test-utils";
 
-import {TaskData} from '../TaskData'
+import {TaskData} from '../../TaskData'
 
 export const taskSlice = createSlice({
     name: "tasks",

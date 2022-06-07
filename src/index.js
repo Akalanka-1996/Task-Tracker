@@ -5,14 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
+import { store } from "./app/store";
 
-import taskReducer from "./features/TaskReducer";
 
-const store = configureStore({
-  reducer: {
-    tasks: taskReducer,
-  },
-});
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
